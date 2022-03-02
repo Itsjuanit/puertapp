@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <bootstrap-vue-datatable :puertos="puertos"></bootstrap-vue-datatable>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import axios from "axios";
+import BootstrapVueDatatable from "./components/BootstrapVueDatatable";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    BootstrapVueDatatable,
+  },
+  data() {
+    return {
+      puertos: [],
+    };
+  },
+  methods: {
+    getPorts() {
+      const api = "http://apitest.cargofive.com/api/ports";
+      axios.get(api).then((res) => {
+        this.puertos = res.data.data;
+      });
+    },
+  },
+  mounted() {
+    this.getPorts();
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
