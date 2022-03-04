@@ -1,16 +1,16 @@
 <template>
   <div>
-    <bootstrap-vue-datatable :puertos="puertos"></bootstrap-vue-datatable>
+    <Vuetify :puertos="puertos"></Vuetify>
   </div>
 </template>
 
 <script>
 import axios from "axios";
-import BootstrapVueDatatable from "./components/BootstrapVueDatatable";
+import Vuetify from "./components/Vuetify";
 export default {
   name: "App",
   components: {
-    BootstrapVueDatatable,
+    Vuetify,
   },
   data() {
     return {
