@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <v-container>
-        <h2>Vuetify Table</h2>
+        <h2>Tabla de puertos</h2>
         <v-row>
           <v-col md="3">
             <v-text-field
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: "App",
+  name: "Datatable",
   props: ["puertos"],
   data() {
     return {
