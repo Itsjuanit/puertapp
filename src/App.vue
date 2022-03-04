@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     getPorts() {
-      const api = "http://apitest.cargofive.com/api/ports";
+      const api = "https://apitest.cargofive.com/api/ports";
       axios.get(api).then((res) => {
         this.puertos = res.data.data;
       });
