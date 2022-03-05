@@ -49,3 +49,16 @@ Las herramientas utilizadas fueron:
 
 Este es el <a href="https://puertapp.vercel.app/" target="_blank">DEMO</a>
 
+
+
+
+
+
+
+Tuve un solo problema que fue el siguiente 
+![Captura de pantalla 2022-03-04 211134](https://user-images.githubusercontent.com/49873452/156858431-6f2586e6-2050-4a2f-9ed3-0e7f979daa19.png) 
+
+El problema es que la API venia con protocolo http y no con https y por eso me generaba ese error, lo resolví usando esta linea " < meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" > ".
+
+
+
