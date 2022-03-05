@@ -72,6 +72,7 @@ export default {
   color: #fff;
 }
 .text {
+  
   max-width: 50%;
   max-height: 600px !important;
   margin-top: 50% !important;
