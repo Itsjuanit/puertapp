@@ -63,6 +63,10 @@ export default {
 };
 </script>
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+#welcome {
+  font-family: "Roboto", sans-serif !important;
+}
 .bar {
   background-color: #1a237e !important;
   color: #fff;
