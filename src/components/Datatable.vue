@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="comp">
     <v-main>
       <v-container>
         <h2>Tabla de puertos</h2>
@@ -49,3 +49,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.comp {
+  min-height: 100vh;
+}
+</style>
